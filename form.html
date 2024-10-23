@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Registration Form</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- js file -->
+    <script defer src="./script.js"></script>
+</head>
+
+
+<body>
+    <div class="limiter">
+        <!-- html form design  -->
+        <div class="div-container" style="background-image: url('bg-01.jpg')">
+      <div class="header">  <h2>Registration Form</h2></div>     
+
+            <form action="" class="form-container" id="form">
+                <!-- Name -->
+                <div class="inputbox">
+                    <label>Username </label>
+                    <input type="text" placeholder="Name" id="uname" name="uname" required />
+                    <div class="error"></div>
+                </div>
+                <!--  Password-->
+                <div class="inputbox">
+                    <label>Password </label>
+                    <input type="password" placeholder="Password" id="password" name="password" required />
+                    <div class="error"></div>
+                </div>
+                <!-- Confirm Password-->
+                <div class="inputbox">
+                    <label>Confirm Password </label>
+                    <input type="password" placeholder="Password" id="password2" name="password2" required />
+                    <div class="error"></div>
+                </div>
+                <!--Email  -->
+                <div class="inputbox">
+                    <label>Email </label>
+                    <input type="email" placeholder="Email" id="email" name="email" required />
+                    <div class="error"></div>
+                </div>
+                <!-- Phone -->
+                <div class="inputbox">
+                    <label>Phone Number </label>
+                    <input type="number" placeholder="Phone" id="phonenumber" name="phone" required />
+                    <div class="error"></div>
+                </div>
+
+                <!-- Gender -->
+                <div class="gender"> Gender </div>
+                <div class="genderbox">
+                    <input type="radio" name="gender" id="male"> Male
+
+                    <input type="radio" name="gender" id="female"> Female
+
+                    <input type="radio" name="gender" id="other"> Other
+
+                </div>
+                <!-- Terms and Condition -->
+                <div class="agreebox">
+                    <input type="checkbox" placeholder="checkbox"> I Agree to the Terms and Condition
+                </div>
+                <!-- Submit buttion -->
+                <div class="buttoncontainer" >
+                    <button type="submit" style="background-image: url('bg-01.jpg')" id="submitBtn" onclick="validateForm()">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
